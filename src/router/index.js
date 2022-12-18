@@ -15,15 +15,9 @@ const router = new VueRouter({
         {
           path:'/login',
           component:() => import('@/views/auth/login')
-        }
-      ]
-    },
-    {
-      path: '/refresh',
-      component: ()=> import('@/components/layout'),
-      children: [
+        },
         {
-          path: '',
+          path: '/refresh',
           component: () => import('@/views/auth/refresh'),
         }
       ]
