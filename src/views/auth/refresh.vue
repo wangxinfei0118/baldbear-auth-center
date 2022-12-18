@@ -3,7 +3,7 @@
     <!-- 弹窗 -->
     <div v-show="visible" >
       <div class="content">
-        <span v-text="message"></span>
+        <span v-html="message"></span>
       </div>
       <!--遮罩层-->
       <div class="mask"></div>
