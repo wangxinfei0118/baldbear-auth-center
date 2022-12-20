@@ -43,7 +43,7 @@ const store = new Vuex.Store({
                     if (res.code === 20000){
                         commit('setUserState',res.data)
                     }
-                    resolve(res.data)
+                    resolve(res)
 
                 }).catch((err) =>{
                     commit('resetUserState')
