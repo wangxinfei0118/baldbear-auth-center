@@ -10,7 +10,7 @@ export const Key = {
 class CookieClass {
   constructor() {
     this.domain = process.env.VUE_APP_COOKIE_DOMAIN // 可以访问Cookie的域
-    this.expireTime = 30 // Cookie有效期
+    this.expireTime = 1 // Cookie有效期
   }
 
   set(key, value, expires, path = '/') {
