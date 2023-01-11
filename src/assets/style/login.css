@@ -37,6 +37,19 @@
   border: 1px solid rgba(101, 101, 101, 0.5);
   background: rgba(101, 101, 101, 0.3);
   outline: none;
+  color: #000;
+}
+input::-webkit-input-placeholder{
+  color: rgba(0, 0, 0,0.8);
+}
+input:-moz-placeholder{
+  color: rgba(0, 0, 0,0.8);
+}
+input::-moz-placeholder{
+  color: rgba(0, 0, 0,0.8);
+}
+input:-ms-input-placeholder{
+  color: rgba(0, 0, 0,0.8);
 }
 
 .login_page .form_body input[type=text].btn, .login_page .form_body input[type=password].btn, .login_page .form_body input[type=button].btn, .login_page .form_body input[type=submit].btn {
@@ -57,7 +70,7 @@
 
 .login_page .form_body .agree {
   font-size: 14px;
-  color: #333;
+  color: rgba(119,136,153);
   margin-top: 20px;
 }
 

@@ -20,11 +20,11 @@ export default {
 <style scoped>
 .layout{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: url(../../assets/image/background.png) no-repeat center center;
   background-size: cover;
 }
 .main{
-  height: calc(100vh - 160px);
+  height: calc(100vh - 80px);
 }
 </style>
