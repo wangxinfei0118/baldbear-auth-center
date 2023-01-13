@@ -22,6 +22,7 @@ export default {
   align-items: center;
   font-size: 13px;
   color: rgb(136, 136, 136);
+  text-align: center;
 }
 a {
   text-decoration:none;
