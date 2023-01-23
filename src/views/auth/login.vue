@@ -166,7 +166,7 @@ export default {
         if (res.code === 20000) {
           this.regMessage = '注册成功'
           setTimeout(() => {
-            this.changetab(1)
+            location.reload()
           }, 500)
         } else {
           this.regMessage = res.message
