@@ -11,7 +11,6 @@ const headers = {
 
 // 用户登录
 export function login(data){
-    // data = 'username=admin&password=123456'
     return request({
         auth,
         headers,
