@@ -6,17 +6,18 @@ const auth = {
 }
 
 const headers = {
-    "Content-Type": "application/x-www-form-urlencoded"
+    "Content-Type": "application/json"
 }
 
 // 用户登录
-export function login(params){
+export function login(data){
+    // data = 'username=admin&password=123456'
     return request({
         auth,
         headers,
         url: "/auth/login",
         method: "post",
-        params
+        data: JSON.stringify(data)
     })
 }
 
@@ -27,7 +28,7 @@ export function register(data) {
         headers,
         url: `/auth/register`,
         method: 'post',
-        data
+        data: JSON.stringify(data)
     })
 }
 
@@ -36,7 +37,6 @@ export function register(data) {
 export function refresh(refreshToken){
     return request({
         auth,
-        headers,
         url: '/auth/refresh',
         method: 'get',
         params:{
@@ -56,7 +56,7 @@ export function getXieyi() {
 // 查询用户名是否存在
 export function usernameExists(username) {
     return request({
-        url: `/system/username/${username}`,
+        url: `/auth/username/${username}`,
         method: 'get'
     })
 }
