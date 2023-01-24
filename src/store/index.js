@@ -73,16 +73,15 @@ const store = new Vuex.Store({
                 }
                 else {
                     refresh(state.refreshToken).then(res =>{
-                        //更新数据
                         if (res.code === 20000){
                             commit('setUserState', res.data)
                             resolve()
                         }
                         else {
+                            commit('resetUserState')
                             reject('您的身份已过期，请重新登录')
                         }
                     }).catch(() =>{
-                        // 重置用户数据
                         commit('resetUserState')
                         reject('您的身份已过期，请重新登录')
                     })
