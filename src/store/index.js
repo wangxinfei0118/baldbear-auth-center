@@ -14,14 +14,14 @@ const store = new Vuex.Store({
     mutations:{
         // 保存用户信息
         setUserState(state,data){
-            const { userInfo, access_token, refresh_token} = data
+            const { userInfo, accessToken, refreshToken} = data
             state.userInfo = userInfo
-            state.accessToken = access_token
-            state.refreshToken = refresh_token
+            state.accessToken = accessToken
+            state.refreshToken = refreshToken
             // 将数据保存到cookie中
             AuthCookie.set(Key.userInfoKey, JSON.stringify(userInfo))
-            AuthCookie.set(Key.accessTokenKey, access_token)
-            AuthCookie.set(Key.refreshTokenKey, refresh_token)
+            AuthCookie.set(Key.accessTokenKey, accessToken)
+            AuthCookie.set(Key.refreshTokenKey, refreshToken)
         },
 
         // 重置用户状态
