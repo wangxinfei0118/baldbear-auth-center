@@ -3,18 +3,17 @@
     <div class="login_box">
       <div class="center_box">
         <!-- 登录&注册-->
-        <div :class="{login_form: true, rotate: tab == 2}">
-          <div :class="{tabs: true, r180: reverse == 2}">
+        <div :class="{login_form: true, rotate: tab === 2}">
+          <div :class="{tabs: true, r180: reverse === 2}">
             <div class="fl tab" @click="changetab(1)">
-              <span :class="{on: tab == 1}">登录</span>
+              <span :class="{on: tab === 1}">登录</span>
             </div>
             <div class="fl tab" @click="changetab(2)">
-              <span :class="{on: tab == 2}">注册</span>
+              <span :class="{on: tab === 2}">注册</span>
             </div>
           </div>
-
           <!-- 登录 -->
-          <div class="form_body" v-if="reverse == 1">
+          <div class="form_body" v-if="reverse === 1">
             <form @submit.prevent="loginSubmit">
               <input type="text" v-model="loginData.username" placeholder="请输入用户名" autocomplete="off">
               <input type="password" v-model="loginData.password" placeholder="请输入密码" autocomplete="off">
@@ -23,9 +22,8 @@
               <input type="submit" v-else value="登录" @submit="loginSubmit" class="btn"/>
             </form>
           </div>
-
           <!-- 注册 -->
-          <div class="form_body r180" v-if="reverse == 2">
+          <div class="form_body r180" v-if="reverse === 2">
             <form @submit.prevent="regSubmit">
               <input type="text" v-model="registerData.username" placeholder="请输入用户名" autocomplete="off">
               <input type="password" v-model="registerData.password" placeholder="6-30位密码，可用数字/字母/符号组合"
@@ -43,7 +41,6 @@
         </div>
       </div>
     </div>
-
     <!-- 用户协议 -->
     <div class="xieyi" v-if="xieyi" @click.self="xieyi = false">
       <div class="xieyi_content">
@@ -91,7 +88,6 @@ export default {
     this.xieyiContent = xieYiContent
   },
   methods: {
-
     // 切换标签
     changetab(int) {
       this.tab = int;
@@ -99,7 +95,6 @@ export default {
         this.reverse = int
       }, 200)
     },
-
     // 提交登录
     loginSubmit() {
       // 处于提交状态
@@ -127,7 +122,6 @@ export default {
         this.loginMessage = '系统繁忙，请稍后再试'
       })
     },
-
     // 提交注册
     async regSubmit() {
       // 处于提交状态
