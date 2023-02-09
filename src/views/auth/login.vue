@@ -133,7 +133,7 @@ export default {
         return false
       }
       if (!isvalidUsername(this.registerData.username)) {
-        this.regMessage = '请输入4-20位用户名，中文，数字，字母'
+        this.regMessage = '请输入4-20位数、字母或组合'
         return false
       }
       const {code, message, data} = await usernameExists(this.registerData.username)
