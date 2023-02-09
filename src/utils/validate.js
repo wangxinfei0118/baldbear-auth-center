@@ -1,6 +1,6 @@
-// 校验用户名是否合法 只允许4-30位数字、字母和下划线
+// 校验用户名是否合法 只允许4-20位数字、字母
 export function isvalidUsername(str) {
-  const valid_map = /^[a-zA-Z0-9_]{4,30}$/
+  const valid_map = /^[a-zA-Z0-9]{4,20}$/
   return valid_map.test(str)
 }
 

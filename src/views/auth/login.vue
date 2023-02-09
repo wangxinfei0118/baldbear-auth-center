@@ -133,7 +133,7 @@ export default {
         return false
       }
       if (!isvalidUsername(this.registerData.username)) {
-        this.regMessage = '请输入4-30位用户名，中文，数字，字母，下划线'
+        this.regMessage = '请输入4-20位用户名，中文，数字，字母'
         return false
       }
       const {code, message, data} = await usernameExists(this.registerData.username)
@@ -146,8 +146,8 @@ export default {
         this.regMessage = '用户名已存在，请重新输入用户名'
         return false
       }
-      if (this.registerData.password.length < 6 || this.registerData.password.length > 30) {
-        this.regMessage = '密码长度应该在6-30位，且不能包含空格'
+      if (this.registerData.password.length < 6 || this.registerData.password.length > 18) {
+        this.regMessage = '密码长度应该在6-18位，且不能包含空格'
         return false
       }
       if (this.registerData.password !== this.registerData.repassword) {
