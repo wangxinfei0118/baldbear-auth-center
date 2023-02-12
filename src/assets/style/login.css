@@ -9,11 +9,10 @@
 }
 
 .login_page .login_form {
-  background: rgba(101, 101, 101, 0.3);
+  background: #ffffff;
   width: 380px;
   position: absolute;
-  top: 160px;
-  border-radius: 6px;
+  top: 100px;
   transition: all 0.8s;
   transform: perspective(600px);
 }
@@ -32,28 +31,27 @@
   height: 43px;
   padding-left: 10px;
   margin-top: 20px;
-  border-radius: 6px;
   font-size: 14px;
-  border: 1px solid rgba(101, 101, 101, 0.5);
-  background: rgba(101, 101, 101, 0.3);
+  border: none;
+  border-bottom: 1px solid rgba(133, 144, 166, 0.2);
   outline: none;
-  color: #000;
+  color: rgb(133, 144, 166);
 }
 input::-webkit-input-placeholder{
-  color: rgba(0, 0, 0,0.8);
+  color: rgb(133, 144, 166);
 }
 input:-moz-placeholder{
-  color: rgba(0, 0, 0,0.8);
+  color: rgb(133, 144, 166);
 }
 input::-moz-placeholder{
-  color: rgba(0, 0, 0,0.8);
+  color: rgb(133, 144, 166);
 }
 input:-ms-input-placeholder{
-  color: rgba(0, 0, 0,0.8);
+  color: rgb(133, 144, 166);
 }
 
 .login_page .form_body input[type=text].btn, .login_page .form_body input[type=password].btn, .login_page .form_body input[type=button].btn, .login_page .form_body input[type=submit].btn {
-  background: #345dc2;
+  background: rgb(4, 97, 207);
   width: 320px;
   color: #fff;
   border: none;
@@ -75,7 +73,7 @@ input:-ms-input-placeholder{
 }
 
 .login_page .form_body .agree a {
-  color: #345dc2;
+  color: rgb(4, 97, 207);
   text-decoration: none;
 }
 
@@ -91,7 +89,6 @@ input:-ms-input-placeholder{
   height: 60px;
   line-height: 60px;
   border-radius: 8px 8px 0 0;
-  border-bottom: 1px solid rgba(101, 101, 101, 1);
 }
 
 .login_page .tabs .tab {
@@ -108,8 +105,8 @@ input:-ms-input-placeholder{
 }
 
 .login_page .tabs .on {
-  border-bottom: 2px solid #345dc2;
-  color: #345dc2;
+  border-bottom: 2px solid rgb(4, 97, 207);
+  color: rgb(4, 97, 207);
 }
 
 .login_page .r180 {
@@ -154,7 +151,7 @@ input:-ms-input-placeholder{
   bottom: 15px;
   width: 166px;
   height: 46px;
-  background: #345dc2;
+  background: rgb(4, 97, 207);
   color: #fff;
   border: none;
   outline: none;
