@@ -21,10 +21,10 @@ export default {
 .layout{
   height: 100vh;
   width: 100%;
-  background: url(../../assets/image/background.png) no-repeat center center;
+  background: url(../../assets/image/background.jpg) no-repeat center center;
   background-size: cover;
 }
 .main{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 160px);
 }
 </style>

@@ -16,22 +16,22 @@ export default {
 <style scoped>
 .footer {
   height: 80px;
-  background-color: rgb(244, 245, 245);
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 13px;
-  color: rgb(136, 136, 136);
+  color: #ffffff;
   text-align: center;
 }
 a {
   text-decoration:none;
 }
 a:link {
-  color:rgb(136, 136, 136);
+  color: #ffffff;
 }
 a:visited {
-  color:rgb(136, 136, 136);
+  color: #ffffff;
 }
 
 </style>
